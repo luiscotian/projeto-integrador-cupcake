@@ -8,23 +8,24 @@
 </head>
 <body>
 
-    <!-- Cabeçalho -->
+    <!-- Cabeçalho com as Abas -->
     <header>
         <div class="logo">Cupcake Gourmet Valentim</div>
         <nav>
+            <a href="#">Início</a>
             <a href="#cardapio">Cardápio</a>
             <a href="#historia">Nossa História</a>
             <a href="#" class="carrinho-btn">🛒 Carrinho (<span id="cart-count">0</span>)</a>
         </nav>
     </header>
 
-    <!-- Seção Principal / Banner -->
+    <!-- Seção Principal / Banner (Início) -->
     <section class="hero">
         <h1>Cupcake Gourmet Valentim</h1>
         <h2>Cupcakes artesanais e saudáveis, adoçados naturalmente para você e sua família!</h2>
     </section>
 
-    <!-- Seção: Nossa História -->
+    <!-- Seção de Nossa História -->
     <section id="historia" class="historia-section">
         <div class="historia-container">
             <h2>Nossa História & Propósito</h2>
@@ -40,10 +41,12 @@
         </div>
     </section>
 
-    <!-- Cardápio / Produtos -->
+    <!-- Seção do Cardápio / Produtos -->
     <section id="cardapio" class="cardapio-section">
         <h2 class="section-title">Nosso Cardápio</h2>
-        <div id="produtos-container" class="grid-container"></div>
+        <div id="produtos-container" class="grid-container">
+            <!-- Os produtos serão carregados dinamicamente via JavaScript -->
+        </div>
     </section>
 
     <!-- Rodapé -->
@@ -51,6 +54,7 @@
         <p>&copy; 2026 Cupcake Gourmet Valentim - Projeto Integrador Transdisciplinar (Engenharia de Software II)</p>
     </footer>
 
+    <!-- Script de consumo da API -->
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
