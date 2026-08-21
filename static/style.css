@@ -12,3 +12,31 @@ nav a { text-decoration: none; color: var(--text-color); font-weight: bold; }
 .card h3 { color: var(--primary-color); }
 .card .preco { font-size: 1.2rem; font-weight: bold; margin: 15px 0; }
 .card button { background-color: var(--primary-color); color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; width: 100%; font-size: 16px; }
+/* Estilo para a Seção de História */
+.historia-section {
+    background-color: #fdf8f5;
+    padding: 60px 20px;
+    margin: 40px 0;
+    border-top: 2px solid #f0e6df;
+    border-bottom: 2px solid #f0e6df;
+}
+
+.historia-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.historia-container h2 {
+    color: #d97706;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.historia-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 15px;
+}

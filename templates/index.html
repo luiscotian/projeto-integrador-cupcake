@@ -3,29 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cupcakes Gourmet Valentim</title>
+    <title>Cupcake Gourmet Valentim</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+
+    <!-- Cabeçalho -->
     <header>
-        <div class="logo">Cupcakes Gourmet Valentim</div>
+        <div class="logo">Cupcake Gourmet Valentim</div>
         <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#produtos">Cardápio</a></li>
-                <li><a class="carrinho-btn" href="#">Carrinho (<span id="cart-count">0</span>)</a></li>
-            </ul>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#historia">Nossa História</a>
+            <a href="#" class="carrinho-btn">🛒 Carrinho (<span id="cart-count">0</span>)</a>
         </nav>
     </header>
-    <main>
-        <section class="hero">
-            <h2>Os melhores cupcakes artesanais para adoçar o seu dia!</h2>
-        </section>
-        <section id="produtos">
-            <h2 class="section-title">Nosso Cardápio</h2>
-            <div id="produtos-container" class="grid-container"></div>
-        </section>
-    </main>
+
+    <!-- Seção Principal / Banner -->
+    <section class="hero">
+        <h1>Cupcake Gourmet Valentim</h1>
+        <h2>Cupcakes artesanais e saudáveis, adoçados naturalmente para você!</h2>
+    </section>
+
+    <!-- Nova Seção: Nossa História -->
+    <section id="historia" class="historia-section">
+        <div class="historia-container">
+            <h2>Nossa História & Propósito</h2>
+            <p>
+                O <strong>Cupcake Gourmet Valentim</strong> nasceu muito além de uma simples confeitaria: ele é fruto de amor, cuidado e inclusão. A nossa inspiração maior veio do meu filho, diagnosticado com a **Síndrome de Prader-Willi (SPW)**.
+            </p>
+            <p>
+                A Síndrome de Prader-Willi é uma condição genética rara que, entre suas principais características, apresenta a hiperfagia (uma sensação constante de fome) e a extrema dificuldade do organismo em processar açúcares e carboidratos refinados, o que exige um controle rigoroso da dieta para evitar complicações graves à saúde.
+            </p>
+            <p>
+                Movidos pelo desejo de proporcionar a ele — e a tantas outras pessoas com restrições alimentares ou que buscam um estilo de vida mais saudável — o prazer de saborear um docinho sem culpa, desenvolvemos receitas exclusivas. Nossos cupcakes são **100% livres de açúcar refinado**, adoçados de forma natural e nutritiva, provando que o sabor e a saúde podem andar perfeitamente de mãos dadas.
+            </p>
+        </div>
+    </section>
+
+    <!-- Cardápio / Produtos -->
+    <section id="cardapio" class="cardapio-section">
+        <h2>Nosso Cardápio Saudável</h2>
+        <div id="produtos-lista" class="produtos-grid">
+            <!-- Os produtos serão carregados dinamicamente via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Cupcake Gourmet Valentim - Projeto Integrador Transdisciplinar (Engenharia de Software II)</p>
+    </footer>
+
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
