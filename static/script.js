@@ -26,3 +26,15 @@ function adicionarCarrinho(nome) {
     document.getElementById('cart-count').innerText = itensCarrinho;
     alert(`"${nome}" adicionado ao carrinho!`);
 }
+
+// Lógica para finalizar a simulação de compra
+document.querySelector('.carrinho-btn').addEventListener('click', function(event) {
+    event.preventDefault(); // Evita que a página recarregue ou pule para o topo
+    let quantidade = document.getElementById('cart-count').innerText;
+    
+    if (quantidade === '0') {
+        alert("Seu carrinho está vazio! Adicione nossos cupcakes saudáveis antes de fechar o pedido.");
+    } else {
+        alert("Você tem " + quantidade + " cupcake(s) no carrinho!\n\n🎉 Simulação de compra finalizada com sucesso!\nMuito obrigado por testar o nosso sistema.");
+    }
+});
